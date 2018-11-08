@@ -2,3 +2,10 @@ body{background:green }
 .tr1{background: salmon}
 .tr2{color: purple}
 .but{color:red;background: orange}
+.head{margin-left:100px; }
+.mydiv{
+    border:1px solid black;
+    background: #00aabb;
+    width: 500px;
+    margin-left: 400px;
+}
