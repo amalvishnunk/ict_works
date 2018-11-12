@@ -1,0 +1,5 @@
+a=input("Enter a string: ")
+print(a[0])
+print(a[1:5])
+print(a[1:])
+print(5*(a+" "))
