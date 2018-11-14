@@ -11,3 +11,4 @@ sudo npm cache clear -f
 npm config set https-proxy http://192.168.1.25:8080
 npm config set proxy http://192.168.1.25:8080
 npm config set strict-ssl false
+echo "finished"
