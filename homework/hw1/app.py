@@ -9,6 +9,27 @@ def calc_per(mark,total):
 def grade(k):
     percent=int(float(k))
     if(percent>=95):
+<<<<<<< HEAD
+        return "S"
+    elif(percent<95 and percent>=90):
+        return "A+"
+    elif(percent<90 and percent>=85):
+        return "A"
+    elif(percent<85 and percent>=80):
+        return "B+"
+    elif(percent<80 and percent>=75):
+        return "B"
+    elif(percent<75 and percent>=70):
+        return "C+"
+    elif(percent<70 and percent>=65):
+        return "C"
+    elif(percent<65 and percent>=60):
+        return "D+"
+    elif(percent<60 and percent>=55):
+        return "D"
+    else:
+        return "F"
+=======
         return "s"
     elif(percent<95 and percent>=90):
         return "a+"
@@ -28,6 +49,7 @@ def grade(k):
         return "d"
     else:
         return "f"
+>>>>>>> f8c995b3362c9e3b77b38ae413d10a93075e6a26
 
 def check(k,l,m):
     percent1=int(float(k))
@@ -37,7 +59,11 @@ def check(k,l,m):
     if(percent1<60 or percent2<60 or percent3<60):
         return "Failed"
     else:
+<<<<<<< HEAD
+        return "Passed"   
+=======
         return "passed"   
+>>>>>>> f8c995b3362c9e3b77b38ae413d10a93075e6a26
 
 # functions end
 app=Flask(__name__)
@@ -76,7 +102,11 @@ def calc():
 
         # return s1_grade+s2_grade+s3_grade+pass_stus
         
+<<<<<<< HEAD
+        return render_template('display.html',stuname=name,sregno=regno,s1name=s1_name,s2name=s2_name,s2grade=s2_grade,s3name=s3_name,s3grade=s3_grade,status=pass_stus,s1grade=s1_grade)
+=======
         return render_template('display.html',stuname=name,sregno=regno,s1name=s1_name,s2name=s2_name,s2grade=s2_grade,s3name=s3_name,s3grde=s3_grade,status=pass_stus,s1grade=s1_grade)
+>>>>>>> f8c995b3362c9e3b77b38ae413d10a93075e6a26
 
 
 if(__name__=='__main__'):
