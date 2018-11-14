@@ -1,0 +1,22 @@
+{%extends 'layout.html'%}
+{%block block1%}
+
+<h1>details page</h1>
+
+{%for s in getdet%}
+
+<div class="row">
+    <div class="col">
+        <div class="row">Id: {{s.id}}</div>
+        <div class="row">Name: {{s.name}}</div>
+        <div class="row">Mobile: {{s.mobile}}</div>
+        <div class="row">Mail: {{s.email}}</div>
+    </div>  
+</div>
+
+<br>
+
+
+{%endfor%}
+
+{%endblock%}

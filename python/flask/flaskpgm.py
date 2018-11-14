@@ -1,8 +1,15 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from data import Students
 
 app=Flask(__name__)
+
+getstudents=Students()
+
+@app.route('/view')
+def _display():
+    return render_template('view.html',studentlist=getstudents)
 
 @app.route('/')
 def fun():
