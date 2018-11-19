@@ -1,0 +1,5 @@
+// path module example
+// console.log(__filename);
+const path=require('path');
+var pathobj=path.parse(__filename);
+console.log(pathobj);
